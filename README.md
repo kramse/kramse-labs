@@ -43,7 +43,8 @@ Kali Linux is a favourite tool for me and I will use it in a lot of trainings. B
 
 Update your Kali with the following command:
 
-```apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
+```
+apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
 ```
 
 Minimal resources for the VM:
