@@ -56,7 +56,7 @@ A Huge thank you goes out to the developers and Offensive Security for providing
 
 ## Ubuntu and Debian Linux
 
-Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers. I will use this when doing Ansible trainings or running services like DNS for trainings
+Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers. I will use this when doing Ansible trainings or running services like Docker for trainings.
 
 ## OpenBSD
 
