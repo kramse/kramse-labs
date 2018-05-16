@@ -9,6 +9,8 @@ BTW If you did not read these, forgot to do this - everything will be fine. You 
 
 **Beware** though that if the rest of the group DID do this it would be unfair for me to spend a lot of time walking you through these steps. So I will give you a link to this guide and ask you to follow these instructions.
 
+If we are doing a "hackerday" you dont need to prepare, but can use the time on-site for doing exactly this - getting your own hacker lab up and running.
+
 # Mandatory
 
 **You MUST do this.**
@@ -50,9 +52,22 @@ apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
 Minimal resources for the VM:
 2Gb memory, 1 CPU 20Gb disk. Better 4Gb ram, 2-4 CPU 30Gb disk.
 
+A Huge thank you goes out to the developers and Offensive Security for providing such a great tool for the community!
 
 ## Ubuntu and Debian Linux
 
-Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers.
+Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers. I will use this when doing Ansible trainings or running services like DNS for trainings
+
+## OpenBSD
+
+OpenBSD is my favourite infrastructure platform. I will typically bring a router with OpenBSD for providing network services like DHCPD, routing, firewalling etc. In real life I also use OpenBSD for mail servers, data center firewalls, BGP routers etc. An awesome operating system which has the best man-pages in the world!
 
 # Extras
+
+There are other resources for setting up your own exploit pentesting labs, for example Prepare your Metasploit Lab Environment https://www.offensive-security.com/metasploit-unleashed/requirements/ from the makers of Kali Linux
+
+## Metasploitable
+
+I often use Metasploitable and having your own VM with Metasploitable will allow you to rune Metasploit exercises completely independently.
+
+https://www.offensive-security.com/metasploit-unleashed/requirements/
