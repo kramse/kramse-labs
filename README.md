@@ -23,11 +23,13 @@ Always use a firewall on your laptop, both for trainings and in general.
 
 ## Install some virtualisation tool
 
-Modern laptop have virtualisation, and having a virtual machine (VM) makes it much easier to run exercises. We will all have the same tools in the same places etc.
-
-I use a mix of VMware, KVM, Xen and you may choose what you like the most.
+Modern laptop have virtualisation, and having a virtual machine (VM) makes it much easier to run exercises. We will all have the same tools in the same places etc. I use a mix of VMware, VirtualBox, KVM, Xen and you may choose what you like the most.
 
 Note: if we are doing Kali Linux with USB network cards you need to run virtualisation that supports it. People have a high success rate with VirtualBox for this.
+
+It is recommended to check you BIOS settings and make sure virtualisation is enabled for the CPU etc.
+
+If you dont have any virtualisation installed the most popular one in my trainings seem to be: https://www.virtualbox.org/
 
 
 
