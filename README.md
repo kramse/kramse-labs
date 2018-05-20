@@ -41,7 +41,13 @@ While we wont use advanced Unix command lines, it is better to know what is mean
 
 Kali Linux is a favourite tool for me and I will use it in a lot of trainings. Best case is that everyone has downloaded and installed a VM before coming.
 
-Update your Kali with the following command:
+Download from https://www.kali.org/downloads/ - recommend the Kali Linux 64 Bit or Kali Linux Light 64 Bit. Note: light requires very little space, but needs to install tools before being useful.
+
+Then follow the documentation from https://docs.kali.org/category/introduction
+
+The default root password is:  toor    so enter username "root" and then password "toor".
+
+**Important: **Update your Kali with the following command:
 
 ```
 apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
@@ -53,6 +59,19 @@ Minimal resources for the VM:
 
 ## Ubuntu and Debian Linux
 
-Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers.
+Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers. I recommend starting with Ubuntu if you are new to Linux servers, because there is a very large community and lots of help.
 
-# Extras
+Note: when installing a virtual machine with these operating systems, you can usually select the default settings and continue the install, since there is only a single virtual disk.
+
+Minimal resources for the VM:
+1Gb memory, 1 CPU 20Gb disk. Better 2Gb ram, 2 CPU 30Gb disk. Also some exercises can benefit from more resources.
+
+Ubuntu can be downloaded via the Download link from:
+https://www.ubuntu.com/download/server
+and the installation guide from https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-server#0
+
+Debian can be downloaded via links from: https://www.debian.org/
+
+Recommended version is the amd64 64-bit which currently can be downloaded from:
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
+choose the latest which currently is: **debian-9.4.0-amd64-netinst.iso**
