@@ -80,9 +80,7 @@ Recommended version is the amd64 64-bit which currently can be downloaded from:
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
 choose the latest which currently is: **debian-9.4.0-amd64-netinst.iso**
 
-## OpenBSD
 
-OpenBSD is my favourite infrastructure platform. I will typically bring a router with OpenBSD for providing network services like DHCPD, routing, firewalling etc. In real life I also use OpenBSD for mail servers, data center firewalls, BGP routers etc. An awesome operating system which has the best man-pages in the world!
 
 # Extras
 
@@ -93,3 +91,7 @@ There are other resources for setting up your own exploit pentesting labs, for e
 I often use Metasploitable and having your own VM with Metasploitable will allow you to rune Metasploit exercises completely independently.
 
 https://www.offensive-security.com/metasploit-unleashed/requirements/
+
+## OpenBSD
+
+OpenBSD is my favourite infrastructure platform. I will typically bring a router with OpenBSD for providing network services like DHCPD, routing, firewalling etc. In real life I also use OpenBSD for mail servers, data center firewalls, BGP routers etc. An awesome operating system which has the best man-pages in the world!
