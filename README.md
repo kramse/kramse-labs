@@ -49,7 +49,7 @@ Then follow the documentation from https://docs.kali.org/category/introduction
 
 The default root password is:  toor    so enter username "root" and then password "toor".
 
-**Important: **Update your Kali with the following command:
+**Important:** Update your Kali with the following command:
 
 ```
 apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
