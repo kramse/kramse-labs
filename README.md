@@ -88,7 +88,7 @@ There are other resources for setting up your own exploit pentesting labs, for e
 
 ## Metasploitable
 
-I often use Metasploitable and having your own VM with Metasploitable will allow you to rune Metasploit exercises completely independently.
+I often use Metasploitable and having your own VM with Metasploitable will allow you to run Metasploit exercises completely independently.
 
 https://www.offensive-security.com/metasploit-unleashed/requirements/
 
