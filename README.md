@@ -43,7 +43,14 @@ While we wont use advanced Unix command lines, it is better to know what is mean
 
 Kali Linux is a favourite tool for me and I will use it in a lot of trainings. Best case is that everyone has downloaded and installed a VM before coming.
 
-Update your Kali with the following command:
+Note: During installation please accept the default of using a network mirror.
+
+"Configure the package manager"
+Make sure the default "Use a network mirror?" is set to <Yes>
+
+That will make it easier to install and update packages later.
+
+Once a week or so I recommend to update your Kali with the following command:
 
 ```
 apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
