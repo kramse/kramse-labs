@@ -54,7 +54,7 @@ The default root password is:  toor    so enter username "root" and then passwor
 Note: During installation please accept the default of using a network mirror.
 
 "Configure the package manager"
-Make sure the default "Use a network mirror?" is set to <Yes>
+Make sure the default "Use a network mirror?" is set to *Yes*
 
 That will make it easier to install and update packages later.
 
