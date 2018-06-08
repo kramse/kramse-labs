@@ -23,11 +23,13 @@ Always use a firewall on your laptop, both for trainings and in general.
 
 ## Install some virtualisation tool
 
-Modern laptop have virtualisation, and having a virtual machine (VM) makes it much easier to run exercises. We will all have the same tools in the same places etc.
-
-I use a mix of VMware, KVM, Xen and you may choose what you like the most.
+Modern laptop have virtualisation, and having a virtual machine (VM) makes it much easier to run exercises. We will all have the same tools in the same places etc. I use a mix of VMware, VirtualBox, KVM, Xen and you may choose what you like the most.
 
 Note: if we are doing Kali Linux with USB network cards you need to run virtualisation that supports it. People have a high success rate with VirtualBox for this.
+
+It is recommended to check you BIOS settings and make sure virtualisation is enabled for the CPU etc.
+
+If you dont have any virtualisation installed the most popular one in my trainings seem to be: https://www.virtualbox.org/
 
 
 
@@ -43,6 +45,12 @@ While we wont use advanced Unix command lines, it is better to know what is mean
 
 Kali Linux is a favourite tool for me and I will use it in a lot of trainings. Best case is that everyone has downloaded and installed a VM before coming.
 
+Download from https://www.kali.org/downloads/ - recommend the Kali Linux 64 Bit or Kali Linux Light 64 Bit. Note: light requires very little space, but needs to install tools before being useful.
+
+Then follow the documentation from https://docs.kali.org/category/introduction
+
+The default root password is:  toor    so enter username "root" and then password "toor".
+
 Note: During installation please accept the default of using a network mirror.
 
 "Configure the package manager"
@@ -50,6 +58,7 @@ Make sure the default "Use a network mirror?" is set to <Yes>
 
 That will make it easier to install and update packages later.
 
+**Important:**
 Once a week or so I recommend to update your Kali with the following command:
 
 ```
@@ -63,11 +72,25 @@ A Huge thank you goes out to the developers and Offensive Security for providing
 
 ## Ubuntu and Debian Linux
 
-Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers. I will use this when doing Ansible trainings or running services like Docker for trainings.
 
-## OpenBSD
+Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers. I will use this when doing Ansible trainings or running services like Docker for trainings. I recommend starting with Ubuntu if you are new to Linux servers, because there is a very large community and lots of help.
 
-OpenBSD is my favourite infrastructure platform. I will typically bring a router with OpenBSD for providing network services like DHCPD, routing, firewalling etc. In real life I also use OpenBSD for mail servers, data center firewalls, BGP routers etc. An awesome operating system which has the best man-pages in the world!
+Note: when installing a virtual machine with these operating systems, you can usually select the default settings and continue the install, since there is only a single virtual disk.
+
+Minimal resources for the VM:
+1Gb memory, 1 CPU 20Gb disk. Better 2Gb ram, 2 CPU 30Gb disk. Also some exercises can benefit from more resources.
+
+Ubuntu can be downloaded via the Download link from:
+https://www.ubuntu.com/download/server
+and the installation guide from https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-server#0
+
+Debian can be downloaded via links from: https://www.debian.org/
+
+Recommended version is the amd64 64-bit which currently can be downloaded from:
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
+choose the latest which currently is: **debian-9.4.0-amd64-netinst.iso**
+
+
 
 # Extras
 
@@ -75,6 +98,10 @@ There are other resources for setting up your own exploit pentesting labs, for e
 
 ## Metasploitable
 
-I often use Metasploitable and having your own VM with Metasploitable will allow you to rune Metasploit exercises completely independently.
+I often use Metasploitable and having your own VM with Metasploitable will allow you to run Metasploit exercises completely independently.
 
 https://www.offensive-security.com/metasploit-unleashed/requirements/
+
+## OpenBSD
+
+OpenBSD is my favourite infrastructure platform. I will typically bring a router with OpenBSD for providing network services like DHCPD, routing, firewalling etc. In real life I also use OpenBSD for mail servers, data center firewalls, BGP routers etc. An awesome operating system which has the best man-pages in the world!
