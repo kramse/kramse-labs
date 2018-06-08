@@ -70,6 +70,15 @@ Minimal resources for the VM:
 
 A Huge thank you goes out to the developers and Offensive Security for providing such a great tool for the community!
 
+PS If you are running on VMware then install the Open VMware Tools:
+```
+apt-get install open-vm-tools-desktop
+```
+on virtualbox install the "additions"
+```
+apt-get install -y virtualbox-guest-x11
+```
+
 ## Ubuntu and Debian Linux
 
 
