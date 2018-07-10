@@ -47,7 +47,7 @@ Kali Linux is a favourite tool for me and I will use it in a lot of trainings. B
 
 Download from https://www.kali.org/downloads/ - recommend the Kali Linux 64 Bit or Kali Linux Light 64 Bit. Note: light requires very little space, but needs to install tools before being useful.
 
-Then follow the documentation from https://docs.kali.org/category/introduction
+Then follow the documentation from https://docs.kali.org/category/introduction Especially use the _Kali Linux Revealed – Mastering the Penetration Testing Distribution_ book from https://www.kali.org/download-kali-linux-revealed-book/
 
 The default root password is:  toor    so enter username "root" and then password "toor".
 
