@@ -114,3 +114,6 @@ https://www.offensive-security.com/metasploit-unleashed/requirements/
 ## OpenBSD
 
 OpenBSD is my favourite infrastructure platform. I will typically bring a router with OpenBSD for providing network services like DHCPD, routing, firewalling etc. In real life I also use OpenBSD for mail servers, data center firewalls, BGP routers etc. An awesome operating system which has the best man-pages in the world!
+
+You can read more about OpenBSD at:
+https://www.openbsd.org/
