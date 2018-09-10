@@ -93,11 +93,13 @@ Ubuntu can be downloaded via the Download link from:
 https://www.ubuntu.com/download/server
 and the installation guide from https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-server#0
 
+Recommended version is Ubuntu 18.04.1 LTS (Bionic Beaver)
+
 Debian can be downloaded via links from: https://www.debian.org/
 
-Recommended version is the amd64 64-bit which currently can be downloaded from:
+Recommended version is Debian 9 amd64 64-bit which currently can be downloaded from:
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
-choose the latest which currently is: **debian-9.4.0-amd64-netinst.iso**
+choose the latest which currently is: **debian-9.5.0-amd64-netinst.iso**
 
 
 
