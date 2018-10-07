@@ -13,3 +13,15 @@
       packages:
         - nmap
         - iperf
+        - cmake
+        - make
+        - gcc
+        - g++
+        - flex
+        - bison
+        - libpcap-dev
+        - libssl-dev
+        - python-dev
+        - swig
+        - zlib1g-dev
+        - libgeoip-dev
