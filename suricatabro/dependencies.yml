@@ -6,10 +6,10 @@
   become: yes
   tasks:
 
-- name: Install a list of packages
-  apt:
-    name: "{{ packages }}"
-  vars:
-    packages:
-    - nmap
-    - iperf
+    - name: Install a list of packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - nmap
+          - iperf
