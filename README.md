@@ -47,11 +47,19 @@ Kali Linux is a favourite tool for me and I will use it in a lot of trainings. B
 
 Download from https://www.kali.org/downloads/ - recommend the Kali Linux 64 Bit or Kali Linux Light 64 Bit. Note: light requires very little space, but needs to install tools before being useful.
 
-Then follow the documentation from https://docs.kali.org/category/introduction
+Then follow the documentation from https://docs.kali.org/category/introduction Especially use the _Kali Linux Revealed – Mastering the Penetration Testing Distribution_ book from https://www.kali.org/download-kali-linux-revealed-book/
 
 The default root password is:  toor    so enter username "root" and then password "toor".
 
-**Important:** Update your Kali with the following command:
+Note: During installation please accept the default of using a network mirror.
+
+"Configure the package manager"
+Make sure the default "Use a network mirror?" is set to *Yes*
+
+That will make it easier to install and update packages later.
+
+**Important:**
+Once a week or so I recommend to update your Kali with the following command:
 
 ```
 apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
@@ -61,6 +69,15 @@ Minimal resources for the VM:
 2Gb memory, 1 CPU 20Gb disk. Better 4Gb ram, 2-4 CPU 30Gb disk.
 
 A Huge thank you goes out to the developers and Offensive Security for providing such a great tool for the community!
+
+PS If you are running on VMware then install the Open VMware Tools:
+```
+apt-get install -y open-vm-tools-desktop
+```
+on virtualbox install the "additions"
+```
+apt-get install -y virtualbox-guest-x11
+```
 
 ## Ubuntu and Debian Linux
 
@@ -76,11 +93,13 @@ Ubuntu can be downloaded via the Download link from:
 https://www.ubuntu.com/download/server
 and the installation guide from https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-server#0
 
+Recommended version is Ubuntu 18.04.1 LTS (Bionic Beaver)
+
 Debian can be downloaded via links from: https://www.debian.org/
 
-Recommended version is the amd64 64-bit which currently can be downloaded from:
+Recommended version is Debian 9 amd64 64-bit which currently can be downloaded from:
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
-choose the latest which currently is: **debian-9.4.0-amd64-netinst.iso**
+choose the latest which currently is: **debian-9.5.0-amd64-netinst.iso**
 
 
 
@@ -97,3 +116,6 @@ https://www.offensive-security.com/metasploit-unleashed/requirements/
 ## OpenBSD
 
 OpenBSD is my favourite infrastructure platform. I will typically bring a router with OpenBSD for providing network services like DHCPD, routing, firewalling etc. In real life I also use OpenBSD for mail servers, data center firewalls, BGP routers etc. An awesome operating system which has the best man-pages in the world!
+
+You can read more about OpenBSD at:
+https://www.openbsd.org/
