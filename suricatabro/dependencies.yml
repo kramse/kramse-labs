@@ -25,3 +25,18 @@
         - swig
         - zlib1g-dev
         - libgeoip-dev
+  - name: Fetch GeoIP database IPv4
+    get_url:
+      url: http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+      dest: /tmp/GeoLiteCity.dat.gz
+  - name: Fetch GeoIP database IPv6
+    get_url:
+      url: http://geolite.maxmind.com/download/geoip/database/GeoLiteCityv6-beta/GeoLiteCityv6.dat.gz
+  - name: Unarchive files
+    unarchive:
+      src: "/tmp/GeoLiteCity.dat.gz"
+      dest: "/usr/share/GeoIP/GeoIPCity.dat"
+  - name: Unarchive files
+    unarchive:
+      src: "/tmp/GeoLiteCityv6.dat.gz"
+      dest: "/usr/share/GeoLiteCityv6.dat"
