@@ -1,0 +1,52 @@
+---
+# Main playbook installing the Suricata and Bro tools
+- name: run the playbook tasks on the localhost
+  hosts: 127.0.0.1
+  connection: local
+  become: yes
+  tasks:
+  - name: Install Elastic stack key
+    shell: wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+
+  - name: Install a list of dependencies
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+        - apt-transport-https
+
+  - name: Add elastic repository
+    copy:
+      content="deb https://artifacts.elastic.co/packages/6.x/apt stable main"
+      dest="/etc/apt/sources.list.d/elastic-6.x.list"
+
+  # Run the equivalent of "apt-get update" as a separate step
+  - apt: update_cache=yes
+    tags:
+      - packages
+
+  - name: Install a list of main packages
+    apt: name={{ item }} state=latest
+    with_items:
+        - unzip
+        - elasticsearch
+        - logstash
+        - redis-server
+        - nginx
+        - apache2-utils
+        - kibana
+
+  - name: copy logstash config
+    action:
+      copy src=files/logstash-suricata.conf
+      dest=/etc/logstash/conf.d/suricata.conf owner=root group=root mode=0644
+
+  - name: Fix permissions on eve.log so logstash can read
+    file: path=/var/log/suricata/eve.json mode=0775
+
+# start services
+  - service: name=elasticsearch state=started enabled=yes
+  - service: name=logstash state=started enabled=yes
+  - service: name=nginx state=started enabled=yes
+  - service: name=suricata state=started enabled=yes
+  - service: name=kibana state=started enabled=yes

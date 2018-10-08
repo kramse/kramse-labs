@@ -18,11 +18,20 @@ Bring your laptop in good working order. Have updates installed, make sure it ca
 
 Always use a firewall on your laptop, both for trainings and in general.
 
+## Configure a virtual server
+
+Use the Debian 9.5 with XFCE GUI unless you have a specific reason not to:
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.5.0-amd64-xfce-CD-1.iso
+
+We will use a few GUI programs, and I recommend allocating 2 cores and 2048MB memory plus 20Gb storage.
+
 # Ansible quick-start
 
 We will use Ansible for this training https://www.ansible.com/
 
 I try to test my playbooks using both Ubuntu and Debian Linux, but Debian is the main target for this training.
+
+
 
 First make sure your system is updated, as root run:
 ```
@@ -42,7 +51,7 @@ Then it should be easy to run Ansible playbooks, like this:
 (again as root, most packet sniffing things will need root too later)
 ```
 cd kramse-labs/suricatabro
-ansible-playbook -v dependencies.yml suricatabro.yml 
+ansible-playbook -v dependencies.yml suricatabro.yml
 ```
 
 Note: I keep these playbooks flat and simple, but you should investigate Ansible roles for real deployments.
