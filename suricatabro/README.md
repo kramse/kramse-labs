@@ -42,7 +42,7 @@ Then it should be easy to run Ansible playbooks, like this:
 (again as root, most packet sniffing things will need root too later)
 ```
 cd kramse-labs/suricatabro
-ansible-playbook dependencies.yml
+ansible-playbook -v dependencies.yml suricatabro.yml 
 ```
 
 Note: I keep these playbooks flat and simple, but you should investigate Ansible roles for real deployments.
