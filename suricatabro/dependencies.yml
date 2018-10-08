@@ -12,6 +12,7 @@
     vars:
       packages:
         - nmap
+        - curl
         - iperf
         - cmake
         - make
