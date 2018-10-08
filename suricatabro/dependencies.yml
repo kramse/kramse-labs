@@ -25,6 +25,7 @@
         - swig
         - zlib1g-dev
         - libgeoip-dev
+        - net-tools
   - name: Install a list of main packages
     apt:
       name: "{{ packages }}"
