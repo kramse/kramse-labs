@@ -28,6 +28,12 @@ https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
 
 We will use a few GUI programs, and I recommend allocating 2 cores and 2048MB memory plus 20Gb storage.
 
+I recommend the install with:
+* all files in a single file system
+* Use network mirror - make sure CD is NOT enabled in /etc/apt/sources.list after install
+* SSH server installed
+* Sudo installed, apt-get install sudo
+
 Also if you are running on VMware then install the Open VMware Tools:
 ```
 apt-get install -y open-vm-tools-desktop
@@ -62,7 +68,7 @@ git clone https://github.com/kramse/kramse-labs
 Then it should be easy to run Ansible playbooks, like this:
 (again as root, most packet sniffing things will need root too later)
 ```
-cd kramse-labs/suricatabro
+cd kramse-labs/suricatazeek
 ansible-playbook -v dependencies.yml suricatabro.yml
 ```
 
