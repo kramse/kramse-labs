@@ -28,6 +28,15 @@ https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
 
 We will use a few GUI programs, and I recommend allocating 2 cores and 2048MB memory plus 20Gb storage.
 
+Also if you are running on VMware then install the Open VMware Tools:
+```
+apt-get install -y open-vm-tools-desktop
+```
+on virtualbox install the "additions"
+```
+apt-get install -y virtualbox-guest-x11
+```
+
 # Ansible quick-start
 
 We will use Ansible for this training https://www.ansible.com/
