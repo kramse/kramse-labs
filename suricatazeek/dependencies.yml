@@ -7,7 +7,7 @@
   tasks:
 
   - lineinfile:
-      path: /etc/apt/sources.list
+      dest: /etc/apt/sources.list
       state: absent
       regexp: 'cdrom'
 
