@@ -7,9 +7,9 @@
   tasks:
 
   - lineinfile:
-    path: /etc/apt/sources.list
-    state: absent
-    regexp: 'cdrom'
+      path: /etc/apt/sources.list
+      state: absent
+      regexp: 'cdrom'
 
   - name: Install a list of dependencies
     apt:
