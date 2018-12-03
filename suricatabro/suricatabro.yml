@@ -14,5 +14,6 @@
         - wireshark
         - bro
         - broctl
+        - bro-aux
         - suricata
         - suricata-oinkmaster

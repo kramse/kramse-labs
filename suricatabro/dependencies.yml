@@ -6,6 +6,11 @@
   become: yes
   tasks:
 
+  - lineinfile:
+    path: /etc/apt/sources.list
+    state: absent
+    regexp: 'cdrom'
+
   - name: Install a list of dependencies
     apt:
       name: "{{ packages }}"
@@ -31,3 +36,4 @@
         - zenmap
         - lsof
         - apt-transport-https
+        - openjdk-8-jre

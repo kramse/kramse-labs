@@ -25,6 +25,11 @@
     tags:
       - packages
 
+  - name: Create the file /etc/default/logstash, if it doesnt exist already
+    file:
+      path: /etc/default/logstash
+      state: touch
+
   - name: Install a list of main packages
     apt: name={{ item }} state=latest
     with_items:
