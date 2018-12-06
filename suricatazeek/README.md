@@ -69,7 +69,7 @@ Then it should be easy to run Ansible playbooks, like this:
 (again as root, most packet sniffing things will need root too later)
 ```
 cd kramse-labs/suricatazeek
-ansible-playbook -v dependencies.yml suricatazeek.yml
+ansible-playbook -v 1-dependencies.yml 2-suricatazeek.yml 3-elasticstack.yml
 ```
 
 Note: I keep these playbooks flat and simple, but you should investigate Ansible roles for real deployments.
