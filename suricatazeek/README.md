@@ -74,7 +74,7 @@ Make sure to use the IP of your server.
 Create ssh key file and install using ssh-copy-id:
 ```
 ssh-keygen -t ed25519
-ssh-copy-id -i id_ed25519
+ssh-copy-id -i id_ed25519 user@server
 ```
 Make sure to specify the ID file correctly. If you get connection refused, then check if SSH is installed and enabled on the debian server.
 
