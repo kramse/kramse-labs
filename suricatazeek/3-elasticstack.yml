@@ -1,5 +1,5 @@
 ---
-# Main playbook installing the Suricata and Bro tools
+# Main playbook installing the Suricata and Zeek tools
 - name: run the playbook tasks on the localhost
   hosts: 127.0.0.1
   connection: local

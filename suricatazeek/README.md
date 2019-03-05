@@ -1,4 +1,4 @@
-# Suricata, Bro og DNS Capture: An Evening with Packets
+# Suricata, Zeek og DNS Capture: An Evening with Packets
 
 Guide to preparing your laptop for training with Kramse
 
