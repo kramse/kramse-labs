@@ -65,19 +65,7 @@ git clone https://github.com/kramse/kramse-labs
 
 ```
 
-Create a hosts file, call it hosts.lab, with this content:
-```
-debian-9-lab ansible_ssh_host=10.0.45.123
-```
-Make sure to use the IP of your server.
-
-Create ssh key file and install using ssh-copy-id:
-```
-ssh-keygen -t ed25519
-ssh-copy-id -i id_ed25519 user@server
-```
-Make sure to specify the ID file correctly. If you get connection refused, then check if SSH is installed and enabled on the debian server.
-
+We will run the playbooks locally, while a normal Ansible setup would use SSH to connect to the remote node.
 
 Then it should be easy to run Ansible playbooks, like this:
 (again as root, most packet sniffing things will need root too later)
