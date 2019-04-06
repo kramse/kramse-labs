@@ -60,7 +60,7 @@ You should reboot if the kernel is upgraded :-)
 Second make sure your system has ansible and my playbooks:
 (as root run)
 ```
-apt install ansible git
+apt -y install ansible git
 git clone https://github.com/kramse/kramse-labs
 
 ```
