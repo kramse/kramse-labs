@@ -99,7 +99,7 @@ Debian can be downloaded via links from: https://www.debian.org/
 
 Recommended version is Debian 9 amd64 64-bit which currently can be downloaded from:
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
-choose the latest which currently is: **debian-9.5.0-amd64-netinst.iso**
+choose the latest which currently is: **debian-9.8.0-amd64-netinst.iso**
 
 
 
