@@ -18,7 +18,9 @@ Bring your laptop in good working order. Have updates installed, make sure it ca
 
 Always use a firewall on your laptop, both for trainings and in general.
 
-## Configure a Raspberry Pi 3
+## Configure a Debian
+
+We will need a Debian "router", so a system installed with Debian. The recommended versions are a Virtual Machine or a small device like a Raspberry Pi.
 
 Use the Debian 9 with XFCE GUI unless you have a specific reason not to:
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.6.0-amd64-xfce-CD-1.iso
