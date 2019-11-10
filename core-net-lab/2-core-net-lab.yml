@@ -1,0 +1,19 @@
+---
+# Main playbook installing the Suricata and Zeek tools
+- name: run the playbook tasks on the localhost
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+  - name: Install a list of main packages
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+        - tcpdump
+        - wireshark
+        - bro
+        - broctl
+        - bro-aux
+        - suricata
+        - suricata-oinkmaster

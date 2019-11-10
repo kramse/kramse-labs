@@ -40,7 +40,7 @@ I recommend the install with:
 
 We will use Ansible for this training https://www.ansible.com/
 
-You must have at least one place, virtual machine to be able to run Ansible.
+You must have at least one place, system able to run Ansible.
 
 You may be able to use Windows as a client, but untested.
 
@@ -67,8 +67,8 @@ git clone https://github.com/kramse/kramse-labs
 Then it should be easy to run Ansible playbooks, like this:
 (again as root, most packet sniffing things will need root too later)
 ```
-cd kramse-labs/suricatazeek
-ansible-playbook -v dependencies.yml suricatazeek.yml
+cd kramse-labs/core-net-lab
+ansible-playbook -v 1-dependencies.yml 2-core-net-lab.yml
 ```
 
 Note: I keep these playbooks flat and simple, but you should investigate Ansible roles for real deployments.

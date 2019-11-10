@@ -1,0 +1,28 @@
+---
+
+- name: run the playbook tasks on the localhost
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+
+  - lineinfile:
+      dest: /etc/apt/sources.list
+      state: absent
+      regexp: 'cdrom'
+
+  - name: Install a list of dependencies
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+        - nmap
+        - curl
+        - iperf
+        - nmap
+        - zenmap
+        - lsof
+        - apt-transport-https
+        - bgpq3
+        - bird
+        - bird-doc
