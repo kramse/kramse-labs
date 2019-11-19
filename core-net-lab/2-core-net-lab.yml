@@ -18,11 +18,14 @@
         - bro-aux
         - isc-dhcp-server
         - unbound
-
+  - sysctl:
+      name: net.ipv4.ip_forward
+      value: '1'
+      sysctl_set: yes
   # Set ip forwarding on in /proc and in the sysctl file and reload if necessary
-  - sysctl: Set IP forward
-        name: net.ipv4.ip_forward
-        value: '1'
-        sysctl_set: yes
-        state: present
-        reload: yes
+  - sysctl:
+      name: net.ipv4.ip_forward
+      value: '1'
+      sysctl_set: yes
+      state: present
+      reload: yes
