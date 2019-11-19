@@ -10,10 +10,27 @@
       name: "{{ packages }}"
     vars:
       packages:
+        - vlan
         - tcpdump
         - wireshark
         - bro
         - broctl
         - bro-aux
-        - suricata
-        - suricata-oinkmaster
+        - isc-dhcp-server
+        - unbound
+
+
+
+  # Set ip forwarding on in /proc and verify token value with the sysctl command
+  - sysctl:
+    name: net.ipv4.ip_forward
+    value: '1'
+    sysctl_set: yes
+
+  # Set ip forwarding on in /proc and in the sysctl file and reload if necessary
+  - sysctl:
+    name: net.ipv4.ip_forward
+    value: '1'
+    sysctl_set: yes
+    state: present
+    reload: yes
