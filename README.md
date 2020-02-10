@@ -105,6 +105,11 @@ choose the latest version available.
 
 # Extras
 
+Hello world
+
+if you dont know Git then go to the github.com example:
+https://guides.github.com/activities/hello-world/
+
 There are other resources for setting up your own exploit pentesting labs, for example Prepare your Metasploit Lab Environment https://www.offensive-security.com/metasploit-unleashed/requirements/ from the makers of Kali Linux
 
 ## Metasploitable
