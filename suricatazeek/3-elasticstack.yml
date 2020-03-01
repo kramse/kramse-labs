@@ -17,8 +17,8 @@
 
   - name: Add elastic repository
     copy:
-      content="deb https://artifacts.elastic.co/packages/6.x/apt stable main"
-      dest="/etc/apt/sources.list.d/elastic-6.x.list"
+      content="deb https://artifacts.elastic.co/packages/7.x/apt stable main"
+      dest="/etc/apt/sources.list.d/elastic-7.x.list"
 
   # Run the equivalent of "apt-get update" as a separate step
   - apt: update_cache=yes
