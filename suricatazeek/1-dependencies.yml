@@ -36,4 +36,4 @@
         - zenmap
         - lsof
         - apt-transport-https
-        - openjdk-8-jre
+        - openjdk-11-jdk
