@@ -1,0 +1,46 @@
+---
+
+- name: run the playbook tasks on the localhost
+  hosts: 127.0.0.1
+  connection: local
+  become: yes
+  tasks:
+
+  - name: Remove CDROM from sources
+    lineinfile:
+      dest: /etc/apt/sources.list
+      state: absent
+      regexp: 'cdrom'
+
+
+  - name: Install a list of dependencies for Atom editor etc.
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+        - curl
+        - iperf
+        - net-tools
+        - apt-transport-https
+
+
+  - name: Add an Apt signing key, for Atom editor
+    apt_key:
+      url: https://packagecloud.io/AtomEditor/atom/gpgkey
+      state: present
+
+
+  - name: Add Atom repository
+    copy:
+      content="deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main"
+      dest="/etc/apt/sources.list.d/atomeditor.list"
+
+  - name: Update apt-get repo and cache
+    apt: update_cache=yes
+
+  - name: Install Atom editor etc.
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+        - atom

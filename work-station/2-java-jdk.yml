@@ -1,0 +1,14 @@
+---
+
+- name: run the playbook tasks on the localhost
+  hosts: 127.0.0.1
+  connection: local
+  become: yes
+  tasks:
+
+  - name: Install Java JDK
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+        - openjdk-11-jdk
