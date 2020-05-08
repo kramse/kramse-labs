@@ -32,8 +32,8 @@
         - zlib1g-dev
         - libgeoip-dev
         - net-tools
-        - nmap
-        - zenmap
         - lsof
         - apt-transport-https
         - openjdk-11-jdk
+        - gnupg1
+        - sudo
