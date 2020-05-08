@@ -20,8 +20,12 @@ Always use a firewall on your laptop, both for trainings and in general.
 
 ## Configure a virtual server
 
-Use the Debian 9 with XFCE GUI unless you have a specific reason not to:
-https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.6.0-amd64-xfce-CD-1.iso
+Use the latest released version of Debian with XFCE GUI unless you have a specific reason not to:
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
+
+May 2020 it seems to be:
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.3.0-amd64-xfce-CD-1.iso
+
 
 Note: if the link does not work, try going to the directory instead - version may have changed:
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
