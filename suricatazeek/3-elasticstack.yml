@@ -30,9 +30,12 @@
       path: /etc/default/logstash
       state: touch
 
-  - name: Install a list of main packages
-    apt: name={{ item }} state=latest
-    with_items:
+
+  - name: Install Elasticsearch etc.
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
         - unzip
         - elasticsearch
         - logstash
@@ -40,6 +43,8 @@
         - nginx
         - apache2-utils
         - kibana
+
+
 
   - name: copy logstash config
     action:
