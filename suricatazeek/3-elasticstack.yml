@@ -56,6 +56,7 @@
 
 # start services
   - service: name=elasticsearch state=started enabled=yes
+  - service: name=filebeat state=started enabled=yes
   - service: name=logstash state=started enabled=yes
   - service: name=nginx state=started enabled=yes
   - service: name=suricata state=started enabled=yes
