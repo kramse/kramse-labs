@@ -15,6 +15,5 @@
         - bro
         - broctl
         - bro-aux
-        - filebeat
         - suricata
         - suricata-oinkmaster

@@ -43,6 +43,7 @@
         - nginx
         - apache2-utils
         - kibana
+        - filebeat
 
 
 
