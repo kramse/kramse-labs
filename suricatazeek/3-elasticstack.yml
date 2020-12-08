@@ -60,7 +60,7 @@
   - name: Enable Zeek in Filebeat
     shell: filebeat modules enable zeek
 
-  - name: Restart service httpd, in all cases
+  - name: Restart service filebeat, in all cases
     service:
       name: filebeat
       state: restarted
