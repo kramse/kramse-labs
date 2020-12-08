@@ -60,10 +60,10 @@
   - name: Enable Zeek in Filebeat
     shell: filebeat modules enable zeek
 
-  - name: Restart service filebeat, in all cases
-    service:
-      name: filebeat
-      state: restarted
+#  - name: Restart service filebeat, in all cases
+#    service:
+#      name: filebeat
+#      state: restarted
 
   - name: Ensure Zeek logs in JSON format
     lineinfile:
