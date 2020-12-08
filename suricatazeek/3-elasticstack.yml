@@ -73,9 +73,7 @@
       state: present
 
   - name: Restart service Zeek (bro), in all cases
-    service:
-      name: bro
-      state: restarted
+    shell: broctl restart
 
   - name: Fix permissions on eve.log so logstash can read
     file: path=/var/log/suricata/eve.json mode=0775
