@@ -56,7 +56,6 @@
     action:
       copy src=files/filebeat-zeek.conf
       dest=/etc/filebeat/modules.d/zeek.yml owner=root group=root mode=0644
-    register: zeek_conf.changed
 
   - name: Enable Zeek in Filebeat
     shell: filebeat modules enable zeek
@@ -65,7 +64,7 @@
     service:
       name: filebeat
       state: restarted
-    when: zeek_conf.changed
+
 
   - name: Fix permissions on eve.log so logstash can read
     file: path=/var/log/suricata/eve.json mode=0775
