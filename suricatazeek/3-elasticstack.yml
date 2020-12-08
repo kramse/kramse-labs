@@ -65,6 +65,16 @@
       name: filebeat
       state: restarted
 
+  - name: Ensure Zeek logs in JSON format
+    lineinfile:
+      path: /etc/bro/site/local.bro
+      regexp: 'json-logs'
+      line: @load policy/tuning/json-logs.zeek
+
+  - name: Restart service Zeek (bro), in all cases
+    service:
+      name: bro
+      state: restarted
 
   - name: Fix permissions on eve.log so logstash can read
     file: path=/var/log/suricata/eve.json mode=0775
