@@ -69,7 +69,8 @@
     lineinfile:
       path: /etc/bro/site/local.bro
       regexp: 'json-logs'
-      line: @load policy/tuning/json-logs.zeek
+      line: '@load policy/tuning/json-logs.bro'
+      state: present
 
   - name: Restart service Zeek (bro), in all cases
     service:
