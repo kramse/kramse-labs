@@ -41,6 +41,8 @@
         - apache2-utils
         - kibana
 
+# Insert config file tasks, to update listen address and reference to where the ES server is
+
 # start services
   - service: name=nginx state=started enabled=yes
   - service: name=kibana state=started enabled=yes

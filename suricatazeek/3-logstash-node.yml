@@ -46,5 +46,7 @@
       copy src=files/logstash-suricata.conf
       dest=/etc/logstash/conf.d/suricata.conf owner=root group=root mode=0644
 
+# Insert config file tasks, to update reference to where the ES server is
+
 # start services
   - service: name=logstash state=started enabled=yes
