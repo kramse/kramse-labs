@@ -1,0 +1,46 @@
+---
+# Main playbook installing the Suricata and Zeek tools
+- name: run the playbook tasks on the localhost
+  hosts: 127.0.0.1
+  connection: local
+  become: yes
+  tasks:
+  - name: Install Elastic stack key
+    shell: wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+
+  - name: Install a list of dependencies
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+        - apt-transport-https
+
+  - name: Add elastic repository
+    copy:
+      content="deb https://artifacts.elastic.co/packages/7.x/apt stable main"
+      dest="/etc/apt/sources.list.d/elastic-7.x.list"
+
+  # Run the equivalent of "apt-get update" as a separate step
+  - apt: update_cache=yes
+    tags:
+      - packages
+
+  - name: Create the file /etc/default/logstash, if it doesnt exist already
+    file:
+      path: /etc/default/logstash
+      state: touch
+
+
+  - name: Install Elasticsearch etc.
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+        - unzip
+        - nginx
+        - apache2-utils
+        - kibana
+
+# start services
+  - service: name=nginx state=started enabled=yes
+  - service: name=kibana state=started enabled=yes
