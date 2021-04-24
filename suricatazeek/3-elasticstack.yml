@@ -9,10 +9,15 @@
   - name: Check if running Kali
     shell: grep "kali /etc/issue" && echo "kali"
     register: kali
+    ignore_errors: yes
+    tags:
+      - testing
 
   - name: Exit if running Kali
     fail: msg="Playbook not intended for Kali Linux, try Debian or Ubuntu"
     when: kali.stdout == "kali"
+    tags:
+      - testing
 
   - name: Install Elastic stack key
     shell: wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
