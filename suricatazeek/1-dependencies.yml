@@ -6,6 +6,10 @@
   become: yes
   tasks:
 
+  - name: Check if running Kali
+    shell: grep "kali /etc/issue" && echo "kali"
+    register: kali
+
   - name: Exit if running Kali
     fail: msg="Playbook not intended for Kali Linux, try Debian or Ubuntu"
     when: kali.stdout == "kali"
@@ -14,9 +18,7 @@
       dest: /etc/apt/sources.list
       state: absent
       regexp: 'cdrom'
-  - name: Check if there is something to upgrade
-    shell: grep "kali /etc/issue" && echo "kali"
-    register: kali
+
 
   - name: Install a list of dependencies
     apt:
