@@ -6,6 +6,10 @@
   become: yes
   tasks:
 
+  - name: Exit if running Kali
+    fail: msg="Playbook not intended for Kali Linux, try Debian or Ubuntu"
+    when: kali.stdout == "kali"
+
   - lineinfile:
       dest: /etc/apt/sources.list
       state: absent
@@ -13,10 +17,6 @@
   - name: Check if there is something to upgrade
     shell: grep "kali /etc/issue" && echo "kali"
     register: kali
-
-  - name: Exit if nothing to upgrade
-    fail: msg="Playbook not intended for Kali Linux, try Debian or Ubuntu"
-    when: kali.stdout == "kali"
 
   - name: Install a list of dependencies
     apt:

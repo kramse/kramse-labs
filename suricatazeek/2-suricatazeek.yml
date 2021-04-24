@@ -5,6 +5,11 @@
   connection: local
   become: yes
   tasks:
+
+  - name: Exit if running Kali
+    fail: msg="Playbook not intended for Kali Linux, try Debian or Ubuntu"
+    when: kali.stdout == "kali"
+
   - name: Install a list of main packages
     apt:
       name: "{{ packages }}"
