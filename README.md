@@ -102,8 +102,9 @@ Once a week or so I recommend to update your Kali with the following command:
 apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
 ```
 
-Minimal resources for the VM:
-2Gb memory, 1 CPU 20Gb disk. Better 4Gb ram, 2-4 CPU 30Gb disk.
+Minimal resources for the VM: 2Gb memory, 1 CPU 20Gb disk.
+
+Better 4Gb ram, 2-4 CPU 30Gb disk.
 
 A Huge thank you goes out to the developers and Offensive Security for providing such a great tool for the community!
 
@@ -128,8 +129,11 @@ I use Debian in courses, but you might want to look into Ubuntu if you are new t
 
 Note: when installing a virtual machine with these operating systems, you can usually select the default settings and continue the install, since there is only a single virtual disk.
 
-Minimal resources for the VM:
-1Gb memory, 1 CPU 20Gb disk. Better 2Gb ram, 2 CPU 30Gb disk. Also some exercises can benefit from more resources.
+Minimum resources for the VM: 1Gb memory, 2 CPU 20Gb disk.
+
+Better: 2Gb ram, 2 CPU 30Gb disk.
+
+Also some exercises can benefit from more resources.
 
 
 Debian can be downloaded via links from: https://www.debian.org/
