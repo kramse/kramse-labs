@@ -116,27 +116,33 @@ on virtualbox install the "additions"
 apt-get install -y virtualbox-guest-x11
 ```
 
+If you meet trouble, then know that other people have probably stumbled upon the same. So using the forums or your preferred search engine you can often find the solution within minutes. Do that, and avoid hours researching obscure errors.
+
+Note: Kali Linux is based on Debian, so the update instructions above are the same for Debian Linux.
+
 ## Ubuntu and Debian Linux
 
+Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers. I will use this when doing Ansible trainings or running services like Docker for trainings.
 
-Ubuntu Linux and Debian Linux are my favourite Linux distributions for servers. I will use this when doing Ansible trainings or running services like Docker for trainings. I recommend starting with Ubuntu if you are new to Linux servers, because there is a very large community and lots of help.
+I use Debian in courses, but you might want to look into Ubuntu if you are new to Linux servers, because there is a very large community and lots of help.
 
 Note: when installing a virtual machine with these operating systems, you can usually select the default settings and continue the install, since there is only a single virtual disk.
 
 Minimal resources for the VM:
 1Gb memory, 1 CPU 20Gb disk. Better 2Gb ram, 2 CPU 30Gb disk. Also some exercises can benefit from more resources.
 
-Ubuntu can be downloaded via the Download link from:
-https://www.ubuntu.com/download/server
-and the installation guide from https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-server#0
-
-Recommended version is Ubuntu 18.04.1 LTS (Bionic Beaver)
 
 Debian can be downloaded via links from: https://www.debian.org/
 
 Recommended version is Debian 10 amd64 64-bit which currently can be downloaded from:
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
 choose the latest version available.
+
+We don't need Ubuntu for courses but if you want to try out Ubuntu it can be downloaded via the Download link from:
+https://www.ubuntu.com/download/server
+and the installation guide from https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-server#0
+
+Recommended version are the current long term stable versions.
 
 
 
