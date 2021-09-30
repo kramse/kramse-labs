@@ -152,9 +152,9 @@ Recommended version are the current long term stable versions.
 
 # Extras
 
-Hello world
+This repository uses Git, and knowing how to use Git is very useful.
 
-if you dont know Git then go to the github.com example:
+If you dont know Git then go to the github.com example Hello world:
 https://guides.github.com/activities/hello-world/
 
 There are other resources for setting up your own exploit pentesting labs, for example Prepare your Metasploit Lab Environment https://www.offensive-security.com/metasploit-unleashed/requirements/ from the makers of Kali Linux
