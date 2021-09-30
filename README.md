@@ -64,6 +64,9 @@ Most of my courses require two virtual machines:
 * Kali Linux - pentesting and tools for network security
 * Debian Linux - used as an example generic server, web server, docker server etc.
 
+You can share the load, so if working in groups of two, one person runs the Kali Linux while the other runs the Debian _server_.
+
+
 # Detailed instructions
 
 If you want to be even more prepared it will be great to get more familiar with Linux and Unix.
