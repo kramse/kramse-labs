@@ -79,9 +79,10 @@ While we wont use advanced Unix command lines, it is better to know what is mean
 
 Kali Linux is a favourite tool for me and I will use it in a lot of trainings. Best case is that everyone has downloaded and installed a VM before coming.
 
-Download from https://www.kali.org/downloads/ - recommend the Kali Linux 64 Bit or Kali Linux Light 64 Bit. Note: light requires very little space, but needs to install tools before being useful.
+Download from https://www.kali.org/get-kali/ - recommend the Kali Linux 64 Bit or Kali Linux Light 64 Bit. Note: light requires very little space, but needs to install tools before being useful.
 
-Then follow the documentation from https://docs.kali.org/category/introduction Especially use the _Kali Linux Revealed – Mastering the Penetration Testing Distribution_ book from https://www.kali.org/download-kali-linux-revealed-book/
+Then follow the documentation from https://docs.kali.org/category/introduction Especially use the _Kali Linux Revealed – Mastering the Penetration Testing Distribution_ book. Currently the link to download is:
+https://kali.training/downloads/Kali-Linux-Revealed-2021-edition.pdf
 
 The default root password is:  toor    so enter username "root" and then password "toor".
 
@@ -91,6 +92,8 @@ Note: During installation please accept the default of using a network mirror.
 Make sure the default "Use a network mirror?" is set to *Yes*
 
 That will make it easier to install and update packages later.
+
+I personally prefer installing from ISO into a VM over pre-made VM images, as you then have to find the _change keyboard layout_ and other options later.
 
 **Important:**
 Once a week or so I recommend to update your Kali with the following command:
