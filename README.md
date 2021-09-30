@@ -11,6 +11,19 @@ BTW If you did not read these, forgot to do this - everything will be fine. You 
 
 If we are doing a "hackerday" you dont need to prepare, but can use the time on-site for doing exactly this - getting your own hacker lab up and running.
 
+## About skills
+
+Working in IT-security requires a lot of different skills. Among those we see a lot of organisations that require or need skills like these:
+
+* Knowledge about virtualisation
+* Linux/Unix skills
+* Various apps like Docker, Web servers, etc.
+
+To help you get these skills the courses run by me often require practical exercises to get the most of the lectures.
+
+So for learning in IT-security I highly recommend following the instructions below.
+
+
 # Mandatory
 
 **You MUST do this.**
@@ -20,6 +33,20 @@ If we are doing a "hackerday" you dont need to prepare, but can use the time on-
 Bring your laptop in good working order. Have updates installed, make sure it can survive the power being interrupted if power cables need re-arranging.
 
 Always use a firewall on your laptop, both for trainings and in general.
+
+Minimum requirements for pc’s:
+
+* at least 8GB RAM (16GB recommended)
+* 200 GB free disk
+
+* at least 8 GB RAM(16 GB recommended)
+* 200 GB free disk.
+
+Windows, Mac or Linux PC are the most common platforms used, but if you can run virtul machines you can use another operating system.
+
+Note: I can only help a little with operating system support.
+
+Note: if you are using a very old laptop you might be able to find cheap upgrades that may improve your daily life. I suggest memory upgrades to 16Gb ~500DKK maybe and SSD/NVMe upgrade from rotating disks ~1.000DKK maybe.
 
 ## Install some virtualisation tool
 
@@ -31,9 +58,13 @@ It is recommended to check you BIOS settings and make sure virtualisation is ena
 
 If you dont have any virtualisation installed the most popular one in my trainings seem to be: https://www.virtualbox.org/
 
+## Install virtual machines
 
+Most of my courses require two virtual machines:
+* Kali Linux - pentesting and tools for network security
+* Debian Linux - used as an example generic server, web server, docker server etc.
 
-# Recommended
+# Detailed instructions
 
 If you want to be even more prepared it will be great to get more familiar with Linux and Unix.
 
