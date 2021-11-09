@@ -19,8 +19,8 @@
       packages:
         - tcpdump
         - wireshark
-        - bro
-        - broctl
+        - zkg
+        - zeek
         - bro-aux
         - suricata
         - suricata-oinkmaster
