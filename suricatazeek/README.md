@@ -20,16 +20,16 @@ Always use a firewall on your laptop, both for trainings and in general.
 
 ## Configure a virtual server
 
-Use the latest released version of Debian with XFCE GUI unless you have a specific reason not to:
+We will use a recent Debian version  with XFCE GUI, currently Debian 11.
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
 
-May 2020 it seems to be:
-https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.3.0-amd64-xfce-CD-1.iso
+Direct link, checked Nov 2021:
 
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.1.0-amd64-netinst.iso
 
 Note: if the link does not work - version may have changed, so use the directory link above.
 
-We will use a few GUI programs, and I recommend allocating 2 cores and 2048MB memory plus 20Gb storage as a minimum. Better with 2 cores and 4096MB memory with option to grow disk into 30-40Gb.
+We will use a few GUI programs, and I recommend allocating 2 cores and 4096MB memory plus 40Gb storage as a minimum. 
 
 I recommend the install with:
 * all files in a single file system

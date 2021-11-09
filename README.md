@@ -138,7 +138,9 @@ Also some exercises can benefit from more resources.
 
 Debian can be downloaded via links from: https://www.debian.org/
 
-Recommended version is Debian 10 amd64 64-bit which currently can be downloaded from:
+Recommended version are the current long term stable versions, currently Debian 11.
+
+Which currently can be downloaded from:
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
 choose the latest version available.
 
@@ -146,7 +148,6 @@ We don't need Ubuntu for courses but if you want to try out Ubuntu it can be dow
 https://www.ubuntu.com/download/server
 and the installation guide from https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-server#0
 
-Recommended version are the current long term stable versions.
 
 
 
