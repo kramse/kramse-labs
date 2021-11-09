@@ -27,7 +27,7 @@
     apt_repository:
       repo: deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main
       state: present
-      filename: atomeditor.list
+      filename: atomeditor
 
   - name: Install Atom editor etc.
     apt:
