@@ -58,11 +58,14 @@ apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
 ```
 You should reboot if the kernel is upgraded :-)
 
-Second make sure your system has ansible and my playbooks, **as root run**
+Second make sure your system has ansible and Git, **as root run**
 ```
 apt -y install ansible git
-git clone https://github.com/kramse/kramse-labs
+```
 
+Second make sure your system has my playbooks, **as your personal user run**
+```
+git clone https://github.com/kramse/kramse-labs
 ```
 
 We will run the playbooks locally, while a normal Ansible setup would use SSH to connect to the remote node.
