@@ -29,7 +29,7 @@ https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.1.0-amd64-ne
 
 Note: if the link does not work - version may have changed, so use the directory link above.
 
-We will use a few GUI programs, and I recommend allocating 2 cores and 4096MB memory plus 40Gb storage as a minimum. 
+We will use a few GUI programs, and I recommend allocating 2 cores and 4096MB memory plus 40Gb storage as a minimum.
 
 I recommend the install with:
 * all files in a single file system
@@ -50,18 +50,15 @@ apt-get install -y virtualbox-guest-x11
 
 We will use Ansible for this training https://www.ansible.com/
 
-I try to test my playbooks using both Ubuntu and Debian Linux, but Debian is the main target for this training.
+I test my playbooks using Debian Linux.
 
-
-
-First make sure your system is updated, as root run:
+First make sure your system is updated, **as root run**:
 ```
 apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
 ```
 You should reboot if the kernel is upgraded :-)
 
-Second make sure your system has ansible and my playbooks:
-(as root run)
+Second make sure your system has ansible and my playbooks, **as root run**
 ```
 apt -y install ansible git
 git clone https://github.com/kramse/kramse-labs
