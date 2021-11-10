@@ -32,6 +32,9 @@
   - name: Enable Zeek in Filebeat
     shell: filebeat modules enable zeek
 
+  - name: Enable Suricata in Filebeat
+    shell: filebeat modules enable suricata
+
 #  - name: Restart service filebeat, in all cases
 #    service:
 #      name: filebeat
@@ -44,6 +47,13 @@
       line: '@load policy/tuning/json-logs.zeek'
       state: present
 
+  - name: Explicit disable security, to avoid a warning popping up
+    lineinfile:
+      path: /etc/elasticsearch/elasticsearch.yml
+      regexp: 'xpack.security.enabled: false'
+      line: 'xpack.security.enabled: false'
+      state: present
+
   - name: Ensure Zeek binaries in PATH
     lineinfile:
       path: /etc/profile
@@ -51,18 +61,21 @@
       line: 'export PATH=$PATH:/opt/zeek/bin'
       state: present
 
-
-
   - name: Fix permissions on eve.log so logstash can read
     file: path=/var/log/suricata/eve.json mode=0775
 
 # start services
   - service: name=elasticsearch state=started enabled=yes
   - service: name=filebeat state=started enabled=yes
-  - service: name=logstash state=started enabled=yes
   - service: name=nginx state=started enabled=yes
   - service: name=suricata state=started enabled=yes
   - service: name=kibana state=started enabled=yes
 
+# Stop services, installed but not needed all the time
+  - service: name=logstash state=stopped enabled=no
+
   - name: Restart service Zeek, in all cases
     shell: sudo /opt/zeek/bin/zeekctl restart
+
+  - name: Create Filebeat dashboards in Kibana - must be running
+    shell: filebeat setup --dashboards
