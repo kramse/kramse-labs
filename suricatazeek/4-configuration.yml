@@ -40,8 +40,8 @@
   - name: Ensure Zeek binaries in PATH
     lineinfile:
       path: /etc/profile
-      regexp: '/opt/zeek'
-      line: 'PATH=$PATH:/opt/zeek/bin'
+      regexp: '/opt/zeek/bin'
+      line: 'export PATH=$PATH:/opt/zeek/bin'
       state: present
 
   - name: Restart service Zeek, in all cases
