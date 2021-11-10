@@ -51,8 +51,7 @@
       line: 'export PATH=$PATH:/opt/zeek/bin'
       state: present
 
-  - name: Restart service Zeek, in all cases
-    shell: zeekctl restart
+
 
   - name: Fix permissions on eve.log so logstash can read
     file: path=/var/log/suricata/eve.json mode=0775
@@ -64,3 +63,6 @@
   - service: name=nginx state=started enabled=yes
   - service: name=suricata state=started enabled=yes
   - service: name=kibana state=started enabled=yes
+
+  - name: Restart service Zeek, in all cases
+    shell: sudo /opt/zeek/bin/zeekctl restart
