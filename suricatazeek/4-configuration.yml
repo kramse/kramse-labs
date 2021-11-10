@@ -17,10 +17,17 @@
       copy src=files/logstash-suricata.conf
       dest=/etc/logstash/conf.d/suricata.conf owner=root group=root mode=0644
 
-  - name: copy Zeek filebeat config
-    action:
-      copy src=files/filebeat-zeek.conf
-      dest=/etc/filebeat/modules.d/zeek.yml owner=root group=root mode=0644
+#  - name: copy Zeek filebeat config
+#    action:
+#      copy src=files/filebeat-zeek.conf
+#      dest=/etc/filebeat/modules.d/zeek.yml owner=root group=root mode=0644
+
+  - name: Create symbolic link
+    file:
+      src: "/opt/zeek/logs/"
+      dest: "/var/lob/bro"
+      state: link
+      force: yes
 
   - name: Enable Zeek in Filebeat
     shell: filebeat modules enable zeek
