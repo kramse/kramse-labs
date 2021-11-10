@@ -37,6 +37,13 @@
       line: '@load policy/tuning/json-logs.zeek'
       state: present
 
+  - name: Ensure Zeek binaries in PATH
+    lineinfile:
+      path: /etc/profile
+      regexp: '/opt/zeek'
+      line: 'PATH=$PATH:/opt/zeek/bin'
+      state: present
+
   - name: Restart service Zeek, in all cases
     shell: zeekctl restart
 
