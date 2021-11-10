@@ -1,0 +1,52 @@
+---
+# Main playbook installing the Suricata and Zeek tools
+- name: run the playbook tasks on the localhost
+  hosts: 127.0.0.1
+  connection: local
+  become: yes
+  tasks:
+
+  - name: Exit if running Kali
+    fail: msg="Playbook not intended for Kali Linux, try Debian or Ubuntu"
+    when: ansible_facts['distribution'] == "Kali GNU/Linux"
+    tags:
+      - testing
+
+  - name: copy logstash config
+    action:
+      copy src=files/logstash-suricata.conf
+      dest=/etc/logstash/conf.d/suricata.conf owner=root group=root mode=0644
+
+  - name: copy Zeek filebeat config
+    action:
+      copy src=files/filebeat-zeek.conf
+      dest=/etc/filebeat/modules.d/zeek.yml owner=root group=root mode=0644
+
+  - name: Enable Zeek in Filebeat
+    shell: filebeat modules enable zeek
+
+#  - name: Restart service filebeat, in all cases
+#    service:
+#      name: filebeat
+#      state: restarted
+
+  - name: Ensure Zeek logs in JSON format
+    lineinfile:
+      path: /etc/zeek/site/local.zeek
+      regexp: 'json-logs'
+      line: '@load policy/tuning/json-logs.zeek'
+      state: present
+
+  - name: Restart service Zeek, in all cases
+    shell: zeekctl restart
+
+  - name: Fix permissions on eve.log so logstash can read
+    file: path=/var/log/suricata/eve.json mode=0775
+
+# start services
+  - service: name=elasticsearch state=started enabled=yes
+  - service: name=filebeat state=started enabled=yes
+  - service: name=logstash state=started enabled=yes
+  - service: name=nginx state=started enabled=yes
+  - service: name=suricata state=started enabled=yes
+  - service: name=kibana state=started enabled=yes
