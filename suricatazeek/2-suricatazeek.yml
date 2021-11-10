@@ -23,6 +23,7 @@
   - name: Install a list of main packages
     apt:
       name: "{{ packages }}"
+      update_cache: yes
     vars:
       packages:
         - tcpdump
