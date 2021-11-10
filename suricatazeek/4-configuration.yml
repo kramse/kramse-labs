@@ -25,7 +25,7 @@
   - name: Create symbolic link
     file:
       src: "/opt/zeek/logs/"
-      dest: "/var/lob/bro"
+      dest: "/var/log/bro"
       state: link
       force: yes
 
