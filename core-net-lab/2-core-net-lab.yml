@@ -13,9 +13,6 @@
         - vlan
         - tcpdump
         - wireshark
-        - bro
-        - broctl
-        - bro-aux
         - isc-dhcp-server
         - unbound
   - sysctl:
