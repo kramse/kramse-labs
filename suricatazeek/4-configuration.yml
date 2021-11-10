@@ -75,7 +75,7 @@
   - service: name=logstash state=stopped enabled=no
 
   - name: Restart service Zeek, in all cases
-    shell: sudo /opt/zeek/bin/zeekctl restart
+    shell: sudo /opt/zeek/bin/zeekctl deploy
 
   - name: Create Filebeat dashboards in Kibana - must be running
     shell: filebeat setup --dashboards
