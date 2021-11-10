@@ -32,7 +32,7 @@
 
   - name: Ensure Zeek logs in JSON format
     lineinfile:
-      path: /etc/zeek/site/local.zeek
+      path: /opt/zeek/share/zeek/site/local.zeek
       regexp: 'json-logs'
       line: '@load policy/tuning/json-logs.zeek'
       state: present
