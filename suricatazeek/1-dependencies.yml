@@ -44,3 +44,5 @@
         - openjdk-11-jdk
         - gnupg1
         - sudo
+        - r-base
+        - python3-pip
