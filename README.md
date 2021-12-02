@@ -43,7 +43,7 @@ Recommended
 * at least 16 GB recommended
 * 200 GB free storage
 
-You need to be able to run virtul machines, 64-bit Linux.
+You need to be able to run virtual machines which are 64-bit Linux.
 
 Note: I can only help a little with operating system support.
 
