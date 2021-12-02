@@ -35,14 +35,15 @@ Bring your laptop in good working order. Have updates installed, make sure it ca
 Always use a firewall on your laptop, both for trainings and in general.
 
 Minimum requirements for pc’s:
+* Modern CPU with virtualisation available
+* at least 8GB RAM
+* 100 GB free storage
 
-* at least 8GB RAM (16GB recommended)
-* 200 GB free disk
+Recommended
+* at least 16 GB recommended
+* 200 GB free storage
 
-* at least 8 GB RAM(16 GB recommended)
-* 200 GB free disk.
-
-Windows, Mac or Linux PC are the most common platforms used, but if you can run virtul machines you can use another operating system.
+You need to be able to run virtul machines, 64-bit Linux.
 
 Note: I can only help a little with operating system support.
 
