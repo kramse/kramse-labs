@@ -17,6 +17,16 @@ The list of applications include:
 * Suricata - robust and modern threat detection engine
 * Various other tools like Wireshark, Tcpdump, Nmap
 
+By default they will be started too! If your system is tight on memory this will be bad. So disable the applications you don't need using systemctl, for instance logstash.
+
+```
+systemctl disable logstash
+systemctl stop logstash
+```
+
+or edit the Ansible playbooks
+
+
 # Instructions
 
 Mandatory **You MUST do this.**
@@ -78,7 +88,7 @@ Exit nano using ctrl-x   (control + X) and save the file, check using:
 
 ```
 hkj@debian-11:~ $ sudo su -
-hkj@debian-11:~ # 
+hkj@debian-11:~ #
 ```
 
 
