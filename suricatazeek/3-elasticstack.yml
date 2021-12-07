@@ -13,7 +13,8 @@
       - testing
 
   - name: Install Elastic stack key
-    shell: wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+    ansible.builtin.apt_key:
+      url: https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
   - name: Install a list of dependencies
     apt:
