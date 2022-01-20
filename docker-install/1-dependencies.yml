@@ -31,7 +31,7 @@
 
   - name: Install Docker key for install
     shell: curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg > /dev/null
-    warn: no
+      warn: no
 
   - name: Add Docker repository
     copy:
