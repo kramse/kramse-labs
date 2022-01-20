@@ -66,4 +66,4 @@
 
   - name: Print the message with docker group
     ansible.builtin.debug:
-      msg: Please logout and in again, if this is the first time you ran this script, adding your ID to the docker group
+      msg: Please reboot, if this is the first time you ran this script to install docker, check everything
