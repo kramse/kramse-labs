@@ -67,11 +67,15 @@
   - name: Create dir for scripts
     file:
         dest="/home/{{ login_user }}/bin" state=directory
+        owner: {{ login_user }}
+        group: {{ login_user }}
 
   - name: Create startup script for OWASP JuiceShop
     copy:
         content="NODE_ENV=unsafe  docker run --rm -p 3000:3000 bkimminich/juice-shop"
         dest="/home/{{ login_user }}/bin/juice-shop.sh"
+        owner: {{ login_user }}
+        group: {{ login_user }}
         mode: u=rwx,g=rx,o=rx
 
   - name: Print the message with docker group
