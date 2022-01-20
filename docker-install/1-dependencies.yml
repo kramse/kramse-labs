@@ -47,9 +47,3 @@
         - docker-ce
         - docker-ce-cli
         - containerd.io
-
-  - name: Add user to docker group, to allow running docker
-    ansible.builtin.user:
-      name: "{{ ansible_user_id }}"
-      groups: docker
-      append: yes
