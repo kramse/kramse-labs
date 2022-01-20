@@ -64,6 +64,15 @@
       groups: docker
       append: yes
 
+  - name: Create dir for scripts
+    file:
+        dest="/home/{{ login_user }}/bin" state=directory
+
+  - name: Create startup script for OWASP JuiceShop
+    copy:
+        content="NODE_ENV=unsafe  docker run --rm -p 3000:3000 bkimminich/juice-shop"
+        dest="/home/{{ login_user }}/bin/juice-shop.sh"
+
   - name: Print the message with docker group
     ansible.builtin.debug:
       msg: Please reboot, if this is the first time you ran this script to install docker, check everything
