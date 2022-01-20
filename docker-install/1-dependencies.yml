@@ -1,0 +1,49 @@
+---
+
+- name: run the playbook tasks on the localhost
+  hosts: 127.0.0.1
+  connection: local
+  become: yes
+  tasks:
+
+  - name: Exit if running Kali
+    fail: msg="Playbook not intended for Kali Linux, try Debian or Ubuntu"
+    when: ansible_facts['distribution'] == "Kali GNU/Linux"
+    tags:
+      - testing
+
+  - lineinfile:
+      dest: /etc/apt/sources.list
+      state: absent
+      regexp: 'cdrom'
+
+
+  - name: Install a list of dependencies
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+        - ca-certificates
+        - curl
+        - gnupg
+        - lsb-release
+
+.
+  - name: Install Doccker key for install
+    shell: curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg > /dev/null
+
+  - name: Add Docker repository
+    copy:
+      content="deb [arch=x86_64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+       bullseye stable"
+      dest="/etc/apt/sources.list.d/docker.list"
+
+  - name: Install a list of main packages
+    apt:
+      name: "{{ packages }}"
+      update_cache: yes
+    vars:
+      packages:
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
