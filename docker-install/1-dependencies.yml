@@ -28,8 +28,8 @@
         - gnupg
         - lsb-release
 
-.
-  - name: Install Doccker key for install
+
+  - name: Install Docker key for install
     shell: curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg > /dev/null
 
   - name: Add Docker repository
