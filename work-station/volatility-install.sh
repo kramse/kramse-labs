@@ -10,4 +10,4 @@ sudo python3 -m pip install -U distorm3 yara pycrypto pillow openpyxl ujson pytz
 sudo python3 -m pip install -U git+https://github.com/volatilityfoundation/volatility3.git
 
 
-echo 'export PATH=/home/$USER/.local/bin:$PATH' >> ~/.bashrc
+echo "export PATH=/home/$USER/.local/bin:\$PATH" >> ~/.bashrc
