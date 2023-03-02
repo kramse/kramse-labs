@@ -1,4 +1,4 @@
-#! /bin/#!/bin/sh
+#! /bin/sh
 
 # Quick and dirty install Volatility framework
 # Inspired by:
