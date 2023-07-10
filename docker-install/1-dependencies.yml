@@ -47,6 +47,7 @@
         - docker-ce
         - docker-ce-cli
         - containerd.io
+        - docker-compose
 
   - name: Run whoami without become.
     command: whoami
