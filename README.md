@@ -43,7 +43,10 @@ Recommended
 * at least 16 GB recommended
 * 200 GB free storage
 
-You need to be able to run virtual machines which are 64-bit Linux.
+**Important*
+You need to be able to run virtual machines which are 64-bit Linux. I will run on Debian AMD64 version! You may be able to run some things under ARM, if you have a modern Macbook with ARM processor. I am sorry that we cannot support every combination of hardware and operating system.
+
+
 
 Note: I can only help a little with operating system support.
 
@@ -81,6 +84,9 @@ While we wont use advanced Unix command lines, it is better to know what is mean
 Kali Linux is a favourite tool for me and I will use it in a lot of trainings. Best case is that everyone has downloaded and installed a VM before coming.
 
 Download from https://www.kali.org/get-kali/ - recommend the Kali Linux 64 Bit or Kali Linux Light 64 Bit. Note: light requires very little space, but needs to install tools before being useful.
+
+**Important:**
+Make sure to use the 64-bit Intel based version if possible, AMD64. Most tools will also work on other versions, but I test using the AMD64 architecture.
 
 Then follow the documentation from https://docs.kali.org/category/introduction Especially use the _Kali Linux Revealed – Mastering the Penetration Testing Distribution_ book. Currently the link to download is:
 https://kali.training/downloads/Kali-Linux-Revealed-2021-edition.pdf
@@ -139,7 +145,10 @@ Also some exercises can benefit from more resources.
 
 Debian can be downloaded via links from: https://www.debian.org/
 
-Recommended version are the current long term stable versions, currently Debian 11.
+Recommended version are the current long term stable versions, currently Debian 12.
+
+**Important:**
+Make sure to use the 64-bit Intel based version if possible, AMD64. Most tools will also work on other versions, but I test using the AMD64 architecture.
 
 Which currently can be downloaded from:
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
