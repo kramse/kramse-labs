@@ -34,14 +34,13 @@
         - bison
         - libpcap-dev
         - libssl-dev
-        - python-dev
         - swig
         - zlib1g-dev
         - libgeoip-dev
         - net-tools
         - lsof
         - apt-transport-https
-        - openjdk-11-jdk
+        - openjdk-17-jdk
         - gnupg1
         - sudo
         - r-base
