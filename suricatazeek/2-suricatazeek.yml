@@ -13,11 +13,11 @@
       - testing
 
   - name: Install OBS key for Zeek install
-    shell: curl -fsSL https://download.opensuse.org/repositories/security:zeek/Debian_11/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/security_zeek.gpg > /dev/null
+    shell: curl -fsSL https://download.opensuse.org/repositories/security:zeek/Debian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/security_zeek.gpg > /dev/null
 
   - name: Add OBS repository for Zeek
     copy:
-      content="deb http://download.opensuse.org/repositories/security:/zeek/Debian_11/ /"
+      content="deb http://download.opensuse.org/repositories/security:/zeek/Debian_12/ /"
       dest="/etc/apt/sources.list.d/security:zeek.list"
 
   - name: Install a list of main packages
