@@ -39,12 +39,12 @@ Always use a firewall on your laptop, both for trainings and in general.
 
 ## Configure a virtual Debian server
 
-We will use a recent Debian version  with XFCE GUI, currently Debian 11.
+We will use a recent Debian version  with XFCE GUI, currently Debian 12.
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
 
 Direct link, checked Nov 2021:
 
-https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.1.0-amd64-netinst.iso
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.2.0-amd64-netinst.iso
 
 Note: if the link does not work - version may have changed, so use the directory link above.
 
@@ -87,8 +87,8 @@ hkj	ALL=(ALL:ALL) NOPASSWD: ALL
 Exit nano using ctrl-x   (control + X) and save the file, check using:
 
 ```
-hkj@debian-11:~ $ sudo su -
-hkj@debian-11:~ #
+hkj@debian-12:~ $ sudo su -
+hkj@debian-12:~ #
 ```
 
 
