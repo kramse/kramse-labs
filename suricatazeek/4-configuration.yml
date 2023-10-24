@@ -47,12 +47,14 @@
       line: '@load policy/tuning/json-logs.zeek'
       state: present
 
-  - name: Explicit disable security, to avoid a warning popping up
-    lineinfile:
-      path: /etc/elasticsearch/elasticsearch.yml
-      regexp: 'xpack.security.enabled: false'
-      line: 'xpack.security.enabled: false'
-      state: present
+# Removed when moving to Bookworm Debian 12 and Elasticsearch 8
+# Keeping as example
+#  - name: Explicit disable security, to avoid a warning popping up
+#    lineinfile:
+#      path: /etc/elasticsearch/elasticsearch.yml
+#      regexp: 'xpack.security.enabled: false'
+#      line: 'xpack.security.enabled: false'
+#      state: present
 
   - name: Ensure Zeek binaries in PATH
     lineinfile:
