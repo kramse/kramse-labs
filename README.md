@@ -43,9 +43,8 @@ Recommended
 * at least 16 GB recommended
 * 200 GB free storage
 
-**Important*
-You need to be able to run virtual machines which are 64-bit Linux. I will run on Debian AMD64 version! You may be able to run some things under ARM, if you have a modern Macbook with ARM processor. I am sorry that we cannot support every combination of hardware and operating system.
-
+**Important**
+You need to be able to run virtual machines which are Linux. I will run on Debian AMD64 version! You may be able to run some things under ARM64, if you have a modern Macbook with ARM processor. 
 
 
 Note: I can only help a little with operating system support.
