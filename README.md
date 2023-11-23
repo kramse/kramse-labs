@@ -15,7 +15,7 @@ If we are doing a "hackerday" you dont need to prepare, but can use the time on-
 
 Working in IT-security requires a lot of different skills. Among those we see a lot of organisations that require or need skills like these:
 
-* Knowledge about virtualisation
+* Knowledge about virtualization
 * Linux/Unix skills
 * Various apps like Docker, Web servers, etc.
 
@@ -24,10 +24,6 @@ To help you get these skills the courses run by me often require practical exerc
 So for learning in IT-security I highly recommend following the instructions below.
 
 
-# Mandatory
-
-**You MUST do this.**
-
 ## Bring a laptop
 
 Bring your laptop in good working order. Have updates installed, make sure it can survive the power being interrupted if power cables need re-arranging.
@@ -35,7 +31,7 @@ Bring your laptop in good working order. Have updates installed, make sure it ca
 Always use a firewall on your laptop, both for trainings and in general.
 
 Minimum requirements for pc’s:
-* Modern CPU with virtualisation available
+* Modern CPU with virtualization available
 * at least 8GB RAM
 * 100 GB free storage
 
@@ -44,7 +40,9 @@ Recommended
 * 200 GB free storage
 
 **Important**
-You need to be able to run virtual machines which are Linux. I will run on Debian AMD64 version! You may be able to run some things under ARM64, if you have a modern Macbook with ARM processor. 
+To be able to run virtual machines which are Linux. I will run on Debian AMD64 version! You may be able to run some things under ARM64, if you have a modern Macbook with ARM processor.
+
+**Not all courses and training need both Debian and Kali Linux**
 
 
 Note: I can only help a little with operating system support.
@@ -52,6 +50,8 @@ Note: I can only help a little with operating system support.
 Note: if you are using a very old laptop you might be able to find cheap upgrades that may improve your daily life. I suggest memory upgrades to 16Gb ~500DKK maybe and SSD/NVMe upgrade from rotating disks ~1.000DKK maybe.
 
 ## Install some virtualisation tool
+
+If you are told we need a virtual machine, then please read on. If not, you don't need to install this.
 
 Modern laptop have virtualisation, and having a virtual machine (VM) makes it much easier to run exercises. We will all have the same tools in the same places etc. I use a mix of VMware, VirtualBox, KVM, Xen and you may choose what you like the most.
 
@@ -61,7 +61,7 @@ Note: if we are doing Kali Linux exercises with USB network cards you need to ru
 
 If you dont have any virtualisation installed the most popular one in my trainings seem to be: https://www.virtualbox.org/
 
-## Install virtual machines
+# Install virtual machines if the training requires it
 
 Most of my courses require two virtual machines:
 * Kali Linux - pentesting and tools for network security
@@ -69,8 +69,10 @@ Most of my courses require two virtual machines:
 
 You can share the load, so if working in groups of two, one person runs the Kali Linux while the other runs the Debian _server_.
 
+If we are doing a workshop you might NOT need this.
 
-# Detailed instructions
+
+## Detailed instructions
 
 If you want to be even more prepared it will be great to get more familiar with Linux and Unix.
 
