@@ -83,10 +83,8 @@ While we wont use advanced Unix command lines, it is better to know what is mean
 
 Kali Linux is a favourite tool for me and I will use it in a lot of trainings. Best case is that everyone has downloaded and installed a VM before coming.
 
-Download from https://www.kali.org/get-kali/ - recommend the Kali Linux 64 Bit or Kali Linux Light 64 Bit. Note: light requires very little space, but needs to install tools before being useful.
+Download from https://www.kali.org/get-kali/ - recommend the Installer Images for Kali Linux as they allow you to choose keyboard etc during install.
 
-**Important:**
-Make sure to use the 64-bit Intel based version if possible, AMD64. Most tools will also work on other versions, but I test using the AMD64 architecture.
 
 Then follow the documentation from https://docs.kali.org/category/introduction Especially use the _Kali Linux Revealed – Mastering the Penetration Testing Distribution_ book. Currently the link to download is:
 https://kali.training/downloads/Kali-Linux-Revealed-2021-edition.pdf
